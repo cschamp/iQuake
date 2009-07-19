@@ -95,7 +95,7 @@
 	[window addSubview:navigationController.view];
 }
 
-- (void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude
+- (void)didUpdateLocationToLatitude:(double)latitude Longitude:(double)longitude
 {
 	self.currentLatitude = latitude;
 	self.currentLongitude = longitude;

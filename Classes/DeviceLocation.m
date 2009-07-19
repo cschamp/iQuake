@@ -60,7 +60,7 @@
 		isRecent = YES;
 		self.latitude = newLocation.coordinate.latitude;
 		self.longitude = newLocation.coordinate.longitude;
-		[self.delegate newLocationUpdateToLatitude:self.latitude Longitude:self.longitude];
+		[self.delegate didUpdateLocationToLatitude:self.latitude Longitude:self.longitude];
 
     } 
     // else skip the event and process the next one. 

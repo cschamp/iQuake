@@ -20,7 +20,7 @@ typedef struct { double latitude, longitude; } DLCoordinate;
 // This protocol is used to send the text for location updates back to another view controller
 @protocol DeviceLocationDelegate <NSObject>
 @required
--(void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude;
+-(void)didUpdateLocationToLatitude:(double)latitude Longitude:(double)longitude;
 @end
 
 @interface DeviceLocation : NSObject <CLLocationManagerDelegate> {

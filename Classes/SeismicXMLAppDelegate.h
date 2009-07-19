@@ -89,7 +89,7 @@
 @property (nonatomic, assign) double currentLatitude;
 @property (nonatomic, assign) double currentLongitude;
 
-- (void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude;
+- (void)didUpdateLocationToLatitude:(double)latitude Longitude:(double)longitude;
 - (void)addEarthquakesToList:(NSArray *)earthquakes;
 - (void)handleError:(NSError *)error;
 
