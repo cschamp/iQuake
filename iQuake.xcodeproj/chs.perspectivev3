@@ -295,14 +295,14 @@
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>AAECC40810139E120039A007</string>
 								<string>1C08E77C0454961000C914BD</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>34</integer>
-									<integer>33</integer>
+									<integer>23</integer>
+									<integer>14</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -323,7 +323,7 @@
 							<real>277</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>2 39 1920 1139 0 0 1920 1178 </string>
+						<string>13 39 1920 1139 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -339,7 +339,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>AAC78D05101227A500DBF789</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>iQuake_Prefix.pch</string>
+								<string>Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -347,29 +347,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>AAC78D06101227A500DBF789</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>iQuake_Prefix.pch</string>
+										<string>Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AAECC40910139E120039A007</string>
+										<string>AAECC42410139EE90039A007</string>
 										<key>history</key>
 										<array>
 											<string>AAECC349101385EC0039A007</string>
 											<string>AAECC34A101385EC0039A007</string>
 											<string>AAECC34B101385EC0039A007</string>
-											<string>AAECC34C101385EC0039A007</string>
 											<string>AAECC3A410138BBC0039A007</string>
-											<string>AAECC3E810139CAA0039A007</string>
-											<string>AAECC3FF10139CF20039A007</string>
+											<string>AAECC42110139EE90039A007</string>
+											<string>AAECC42210139EE90039A007</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>AAECC315101382570039A007</string>
-											<string>AAECC34E101385EC0039A007</string>
 											<string>AAECC34F101385EC0039A007</string>
 											<string>AAECC353101385EC0039A007</string>
-											<string>AAECC35E101385EC0039A007</string>
 											<string>AAECC39F1013896C0039A007</string>
+											<string>AAECC42310139EE90039A007</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -385,7 +383,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1621, 765}}</string>
 								<key>RubberWindowFrame</key>
-								<string>2 39 1920 1139 0 0 1920 1178 </string>
+								<string>13 39 1920 1139 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -409,6 +407,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1621, 301}}</string>
+										<key>RubberWindowFrame</key>
+										<string>13 39 1920 1139 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -448,8 +448,6 @@
 									<string>PBXCVSModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -465,8 +463,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1621, 301}}</string>
-										<key>RubberWindowFrame</key>
-										<string>2 39 1920 1139 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -494,11 +490,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>AAECC40A10139E120039A007</string>
+				<string>AAECC41D10139EB50039A007</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>AAECC40B10139E120039A007</string>
+				<string>AAECC41E10139EB50039A007</string>
 				<string>AAC78D05101227A500DBF789</string>
-				<string>AAECC40C10139E120039A007</string>
+				<string>AAECC41F10139EB50039A007</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -668,7 +664,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>269721106.278696</real>
+	<real>269721321.92420298</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
@@ -683,10 +679,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/chs/src/iPhone/SeismicXML/iQuake.xcodeproj</string>
+		<string>/Users/chs/src/iPhone/iQuake/iQuake.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>2 39 1920 1139 0 0 1920 1178 </string>
+	<string>13 39 1920 1139 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
