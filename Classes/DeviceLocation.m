@@ -14,6 +14,7 @@
 @synthesize latitude;
 @synthesize longitude;
 @synthesize isRecent;
+@synthesize delegate;
 
 - (id) init
 {
@@ -23,6 +24,7 @@
 		latitude = 0.0;
 		longitude = 0.0;
 		locationManager = nil;
+		delegate = nil;
 	}
 	return self;
 }
@@ -58,7 +60,8 @@
 		isRecent = YES;
 		self.latitude = newLocation.coordinate.latitude;
 		self.longitude = newLocation.coordinate.longitude;
-        // XXX printf("latitude %+.6f, longitude %+.6f\n", newLocation.coordinate.latitude, newLocation.coordinate.longitude); 
+		[self.delegate newLocationUpdateToLatitude:self.latitude Longitude:self.longitude];
+
     } 
     // else skip the event and process the next one. 
 }

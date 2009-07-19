@@ -48,7 +48,6 @@
 #import "SeismicXMLAppDelegate.h"
 #import "RootViewController.h"
 #import "Earthquake.h"
-#import "DeviceLocation.h"
 // This framework was imported so we could use the kCFURLErrorNotConnectedToInternet error code.
 #import <CFNetwork/CFNetwork.h>
 
@@ -65,6 +64,8 @@
 @synthesize currentParsedCharacterData;
 @synthesize currentParseBatch;
 @synthesize currentLocation;
+@synthesize currentLongitude;
+@synthesize currentLatitude;
 
 - (void)dealloc {
 	[earthquakeFeedConnection release];
@@ -82,17 +83,18 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	DeviceLocation *loc = [[DeviceLocation alloc] init];
+	loc.delegate = self;
 	self.currentLocation = loc;
 	[loc release];
 	[self.currentLocation startUpdates];
 	
-
 	// Initialize the array of earthquakes and pass a reference to that list to the Root view controller.
 	self.earthquakeList = [NSMutableArray array];
 	rootViewController.earthquakeList = earthquakeList;
 	// Add the navigation view controller to the window.
 	[window addSubview:navigationController.view];
     
+#if 0
     // Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the
     // application will remain responsive to the user. 
     //
@@ -110,6 +112,33 @@
     
     // Start the status bar network activity indicator. We'll turn it off when the connection finishes or experiences an error.
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+#endif
+}
+
+- (void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude
+{
+	self.currentLatitude = latitude;
+	self.currentLongitude = longitude;
+
+#if 1
+    // Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the
+    // application will remain responsive to the user. 
+    //
+    // IMPORTANT! The main thread of the application should never be blocked! Also, avoid synchronous network access on any thread.
+    //
+    static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/7day-M2.5.xml";
+    NSURLRequest *earthquakeURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:feedURLString]];
+    self.earthquakeFeedConnection = [[[NSURLConnection alloc] initWithRequest:earthquakeURLRequest delegate:self] autorelease];
+    
+    // Test the validity of the connection object. The most likely reason for the connection object to be nil is a malformed
+    // URL, which is a programmatic error easily detected during development. If the URL is more dynamic, then you should
+    // implement a more flexible validation technique, and be able to both recover from errors and communicate problems
+    // to the user in an unobtrusive manner.
+    NSAssert(self.earthquakeFeedConnection != nil, @"Failure to create URL connection.");
+    
+    // Start the status bar network activity indicator. We'll turn it off when the connection finishes or experiences an error.
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+#endif
 }
 
 #pragma mark NSURLConnection delegate methods
@@ -193,19 +222,17 @@
 // The batch size is set via the kSizeOfEarthquakeBatch constant.
 - (void)addEarthquakesToList:(NSArray *)earthquakes {
 	[self.earthquakeList addObjectsFromArray:earthquakes];
-	
-	if (self.currentLocation.isRecent) {
-		NSSortDescriptor *distanceDescriptor =
-			[[[NSSortDescriptor alloc] initWithKey:@"distance"
-								   ascending:YES
-								   selector:@selector(compare:)] autorelease];
 
-		NSArray *descriptors = [NSArray arrayWithObjects:distanceDescriptor, nil];
-		[self.earthquakeList sortUsingDescriptors:descriptors];
-	}
-	
-    // The table needs to be reloaded to reflect the new content of the list.
-    [rootViewController.tableView reloadData];
+	NSSortDescriptor *distanceDescriptor =
+		[[[NSSortDescriptor alloc] initWithKey:@"distance"
+							   ascending:YES
+							   selector:@selector(compare:)] autorelease];
+
+	NSArray *descriptors = [NSArray arrayWithObjects:distanceDescriptor, nil];
+	[self.earthquakeList sortUsingDescriptors:descriptors];
+
+	// The table needs to be reloaded to reflect the new content of the list.
+	[rootViewController.tableView reloadData];
 }
 
 #pragma mark Parser constants

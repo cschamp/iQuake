@@ -15,12 +15,21 @@ typedef enum {
 	DLNauticalMiles = 2,
 } DLunits;
 
+typedef struct { double latitude, longitude; } DLCoordinate;
+
+// This protocol is used to send the text for location updates back to another view controller
+@protocol DeviceLocationDelegate <NSObject>
+@required
+-(void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude;
+@end
+
 @interface DeviceLocation : NSObject <CLLocationManagerDelegate> {
 	@private
 	CLLocationManager *locationManager;
 	double latitude;
 	double longitude;
 	BOOL isRecent;
+	id delegate;
 }
 
 - (void)startUpdates;
@@ -32,5 +41,6 @@ typedef enum {
 @property (nonatomic, assign) double latitude;
 @property (nonatomic, assign) double longitude;
 @property (nonatomic, assign) BOOL isRecent; 
+@property (nonatomic, assign) id <DeviceLocationDelegate> delegate;
 
 @end
