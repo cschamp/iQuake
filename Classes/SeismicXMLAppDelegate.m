@@ -100,6 +100,12 @@
 	self.currentLatitude = latitude;
 	self.currentLongitude = longitude;
 
+	// XXX This might be a little fragile and not the best thing to do, but the app will not begin downloading
+	// XXX data from the USGS site until Location Manager has given us our current location. Obviously this is
+	// XXX wrong for cases where the user has disabled the Location Manager feature, but for a demo, perhaps
+	// XXX it's good enough. Would also be good to add an indefinite progress indicator (spinning gears) that starts
+	// XXX in applicationDidFinishLaunching:application (above) and ends here. [schamp 20070719]
+
     // Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the
     // application will remain responsive to the user. 
     //
