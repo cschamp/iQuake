@@ -55,11 +55,13 @@
 @synthesize USGSWebLink;
 @synthesize latitude;
 @synthesize longitude;
+@synthesize distance;
 
 - (void)dealloc {
     [location release];
     [date release];
     [USGSWebLink release];
+	[distance release];
     [super dealloc];
 }
 

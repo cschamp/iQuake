@@ -62,6 +62,7 @@
     // to be shown in a map view.
     double latitude;
     double longitude;
+	NSNumber *distance;
 }
 
 @property (nonatomic, assign) CGFloat magnitude;
@@ -70,5 +71,6 @@
 @property (nonatomic, retain) NSString *USGSWebLink;
 @property (nonatomic, assign) double latitude;
 @property (nonatomic, assign) double longitude;
+@property (nonatomic, retain) NSNumber *distance;
 
 @end

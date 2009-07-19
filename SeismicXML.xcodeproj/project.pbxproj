@@ -24,6 +24,8 @@
 		8480A9C30DB947B200CD87F1 /* 5.0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8480A9BF0DB947B200CD87F1 /* 5.0.png */; };
 		848AEAA60DDDFBFF000847AD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848AEAA50DDDFBFF000847AD /* Icon.png */; };
 		84EF889E0DB9369300448949 /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF889D0DB9369300448949 /* Earthquake.m */; };
+		AAC78D791012708500DBF789 /* DeviceLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC78D781012708500DBF789 /* DeviceLocation.m */; };
+		AAC78D841012752700DBF789 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC78D831012752700DBF789 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,9 @@
 		84EF889C0DB9369300448949 /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
 		84EF889D0DB9369300448949 /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earthquake.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC78D771012708500DBF789 /* DeviceLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLocation.h; sourceTree = "<group>"; };
+		AAC78D781012708500DBF789 /* DeviceLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLocation.m; sourceTree = "<group>"; };
+		AAC78D831012752700DBF789 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
 				30AE73500FA9178A000B9BFA /* CFNetwork.framework in Frameworks */,
+				AAC78D841012752700DBF789 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				84EF889C0DB9369300448949 /* Earthquake.h */,
 				84EF889D0DB9369300448949 /* Earthquake.m */,
+				AAC78D771012708500DBF789 /* DeviceLocation.h */,
+				AAC78D781012708500DBF789 /* DeviceLocation.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAC78D831012752700DBF789 /* CoreLocation.framework */,
 				30AE734F0FA9178A000B9BFA /* CFNetwork.framework */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -211,6 +220,7 @@
 				1D3623260D0F684500981E51 /* SeismicXMLAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				84EF889E0DB9369300448949 /* Earthquake.m in Sources */,
+				AAC78D791012708500DBF789 /* DeviceLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

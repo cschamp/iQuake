@@ -48,6 +48,7 @@
 #import "SeismicXMLAppDelegate.h"
 #import "RootViewController.h"
 #import "Earthquake.h"
+#import "DeviceLocation.h"
 // This framework was imported so we could use the kCFURLErrorNotConnectedToInternet error code.
 #import <CFNetwork/CFNetwork.h>
 
@@ -63,24 +64,32 @@
 @synthesize currentEarthquakeObject;
 @synthesize currentParsedCharacterData;
 @synthesize currentParseBatch;
+@synthesize currentLocation;
 
 - (void)dealloc {
-    [earthquakeFeedConnection release];
-    [earthquakeData release];
+	[earthquakeFeedConnection release];
+	[earthquakeData release];
 	[navigationController release];
-    [rootViewController release];
+	[rootViewController release];
 	[window release];
 	[earthquakeList release];
-    [currentEarthquakeObject release];
-    [currentParsedCharacterData release];
-    [currentParseBatch release];
+	[currentEarthquakeObject release];
+	[currentParsedCharacterData release];
+	[currentParseBatch release];
+	[currentLocation release];
 	[super dealloc];
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	DeviceLocation *loc = [[DeviceLocation alloc] init];
+	self.currentLocation = loc;
+	[loc release];
+	[self.currentLocation startUpdates];
+	
+
 	// Initialize the array of earthquakes and pass a reference to that list to the Root view controller.
-    self.earthquakeList = [NSMutableArray array];
-    rootViewController.earthquakeList = earthquakeList;
+	self.earthquakeList = [NSMutableArray array];
+	rootViewController.earthquakeList = earthquakeList;
 	// Add the navigation view controller to the window.
 	[window addSubview:navigationController.view];
     
@@ -121,7 +130,7 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;   
     if ([error code] == kCFURLErrorNotConnectedToInternet) {
         // if we can identify the error, we can present a more precise message to the user.
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:NSLocalizedString(@"No Connection Error",                             @"Error message displayed when not connected to the Internet.") forKey:NSLocalizedDescriptionKey];
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:NSLocalizedString(@"No Connection Error", @"Error message displayed when not connected to the Internet.") forKey:NSLocalizedDescriptionKey];
         NSError *noConnectionError = [NSError errorWithDomain:NSCocoaErrorDomain code:kCFURLErrorNotConnectedToInternet userInfo:userInfo];
         [self handleError:noConnectionError];
     } else {
@@ -183,7 +192,18 @@
 // The secondary (parsing) thread calls addToEarthquakeList: on the main thread with batches of parsed objects. 
 // The batch size is set via the kSizeOfEarthquakeBatch constant.
 - (void)addEarthquakesToList:(NSArray *)earthquakes {
-    [self.earthquakeList addObjectsFromArray:earthquakes];
+	[self.earthquakeList addObjectsFromArray:earthquakes];
+	
+	if (self.currentLocation.isRecent) {
+		NSSortDescriptor *distanceDescriptor =
+			[[[NSSortDescriptor alloc] initWithKey:@"distance"
+								   ascending:YES
+								   selector:@selector(compare:)] autorelease];
+
+		NSArray *descriptors = [NSArray arrayWithObjects:distanceDescriptor, nil];
+		[self.earthquakeList sortUsingDescriptors:descriptors];
+	}
+	
     // The table needs to be reloaded to reflect the new content of the list.
     [rootViewController.tableView reloadData];
 }
@@ -273,6 +293,8 @@ static NSString * const kGeoRSSPointElementName = @"georss:point";
         [scanner scanDouble:&longitude];
         self.currentEarthquakeObject.latitude = latitude;
         self.currentEarthquakeObject.longitude = longitude;
+		// XXX If the distance were displayed, would be best to allow user to select the units.
+		self.currentEarthquakeObject.distance = [[NSNumber alloc] initWithDouble:[self.currentLocation distanceToPoint:DLStatuteMiles latitude:latitude longitude:longitude]];
     }
     // Stop accumulating parsed character data. We won't start again until specific elements begin.
     accumulatingParsedCharacterData = NO;

@@ -47,7 +47,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class Earthquake, RootViewController;
+@class Earthquake, RootViewController, DeviceLocation;
 
 @interface SeismicXMLAppDelegate : NSObject <UIApplicationDelegate> {
 	UIWindow *window;
@@ -66,6 +66,8 @@
     NSMutableString *currentParsedCharacterData;
     BOOL accumulatingParsedCharacterData;
     BOOL didAbortParsing;
+	
+	DeviceLocation *currentLocation;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -79,6 +81,8 @@
 @property (nonatomic, retain) Earthquake *currentEarthquakeObject;
 @property (nonatomic, retain) NSMutableString *currentParsedCharacterData;
 @property (nonatomic, retain) NSMutableArray *currentParseBatch;
+
+@property (nonatomic, retain) DeviceLocation *currentLocation;
 
 - (void)addEarthquakesToList:(NSArray *)earthquakes;
 - (void)handleError:(NSError *)error;
