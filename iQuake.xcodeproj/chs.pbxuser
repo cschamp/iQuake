@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* SeismicXMLAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 2037}}";
+			sepNavSelRange = "{4357, 0}";
+			sepNavVisRange = "{1291, 1636}";
+		};
+	};
+	1D3623250D0F684500981E51 /* SeismicXMLAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 6951}}";
+			sepNavSelRange = "{571, 0}";
+			sepNavVisRange = "{0, 2122}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* iQuake */ = {
+		activeExec = 0;
+		executables = (
+			AAC78CF71012279100DBF789 /* iQuake */,
+		);
+	};
+	28A0AAE50D9B0CCF005BE974 /* iQuake_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 748}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 89}";
+		};
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 1281}}";
+			sepNavSelRange = "{2983, 0}";
+			sepNavVisRange = "{1361, 1628}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 4473}}";
+			sepNavSelRange = "{2708, 19}";
+			sepNavVisRange = "{1979, 1743}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = AAC78CF71012279100DBF789 /* iQuake */;
+		activeSDKPreference = iphonesimulator3.1;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* iQuake */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* iQuake */,
+		);
+		breakpoints = (
+			AAC78E221012AA5500DBF789 /* SeismicXMLAppDelegate.m:308 */,
+			AAC78E731012B1C800DBF789 /* SeismicXMLAppDelegate.m:311 */,
+			AAECC3111013824E0039A007 /* SeismicXMLAppDelegate.m:71 */,
+			AAECC37F1013866D0039A007 /* SeismicXMLAppDelegate.m:100 */,
+			AAECC381101386760039A007 /* SeismicXMLAppDelegate.m:85 */,
+			AAECC395101389260039A007 /* DeviceLocation.m:43 */,
+			AAECC3971013892B0039A007 /* DeviceLocation.m:21 */,
+			AAECC39B101389440039A007 /* DeviceLocation.m:56 */,
+		);
+		codeSenseManager = AAC78D14101227A500DBF789 /* Code sense */;
+		executables = (
+			AAC78CF71012279100DBF789 /* iQuake */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					755,
+					817,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1382,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1342,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 269720812;
+			PBXWorkspaceStateSaveDate = 269720812;
+		};
+		perUserProjectItems = {
+			AAECC315101382570039A007 /* PBXTextBookmark */ = AAECC315101382570039A007 /* PBXTextBookmark */;
+			AAECC349101385EC0039A007 /* PBXTextBookmark */ = AAECC349101385EC0039A007 /* PBXTextBookmark */;
+			AAECC34A101385EC0039A007 /* PBXTextBookmark */ = AAECC34A101385EC0039A007 /* PBXTextBookmark */;
+			AAECC34B101385EC0039A007 /* PBXTextBookmark */ = AAECC34B101385EC0039A007 /* PBXTextBookmark */;
+			AAECC34C101385EC0039A007 /* PBXTextBookmark */ = AAECC34C101385EC0039A007 /* PBXTextBookmark */;
+			AAECC34E101385EC0039A007 /* PBXTextBookmark */ = AAECC34E101385EC0039A007 /* PBXTextBookmark */;
+			AAECC34F101385EC0039A007 /* PBXTextBookmark */ = AAECC34F101385EC0039A007 /* PBXTextBookmark */;
+			AAECC353101385EC0039A007 /* PBXTextBookmark */ = AAECC353101385EC0039A007 /* PBXTextBookmark */;
+			AAECC35E101385EC0039A007 /* PBXTextBookmark */ = AAECC35E101385EC0039A007 /* PBXTextBookmark */;
+			AAECC39F1013896C0039A007 /* PBXTextBookmark */ = AAECC39F1013896C0039A007 /* PBXTextBookmark */;
+			AAECC3A410138BBC0039A007 /* PBXTextBookmark */ = AAECC3A410138BBC0039A007 /* PBXTextBookmark */;
+			AAECC3E810139CAA0039A007 /* PBXTextBookmark */ = AAECC3E810139CAA0039A007 /* PBXTextBookmark */;
+			AAECC3FF10139CF20039A007 /* PBXTextBookmark */ = AAECC3FF10139CF20039A007 /* PBXTextBookmark */;
+			AAECC40910139E120039A007 /* PBXTextBookmark */ = AAECC40910139E120039A007 /* PBXTextBookmark */;
+		};
+		sourceControlManager = AAC78D13101227A500DBF789 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8480A9C70DB947D700CD87F1 /* ReadMe.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1173, 1805}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2297}";
+		};
+	};
+	84EF889C0DB9369300448949 /* Earthquake.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1560, 1617}}";
+			sepNavSelRange = "{3601, 0}";
+			sepNavVisRange = "{1366, 2263}";
+		};
+	};
+	84EF889D0DB9369300448949 /* Earthquake.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1557, 1449}}";
+			sepNavSelRange = "{2812, 0}";
+			sepNavVisRange = "{1512, 1330}";
+		};
+	};
+	AAC78CF71012279100DBF789 /* iQuake */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = iQuake;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	AAC78D13101227A500DBF789 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	AAC78D14101227A500DBF789 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	AAC78D771012708500DBF789 /* DeviceLocation.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1173, 825}}";
+			sepNavSelRange = "{252, 0}";
+			sepNavVisRange = "{0, 632}";
+		};
+	};
+	AAC78D781012708500DBF789 /* DeviceLocation.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1859, 1974}}";
+			sepNavSelRange = "{321, 0}";
+			sepNavVisRange = "{1344, 639}";
+		};
+	};
+	AAC78E201012AA5500DBF789 /* SeismicXMLAppDelegate.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = SeismicXMLAppDelegate.m;
+		path = /Users/chs/src/iPhone/SeismicXML/Classes/SeismicXMLAppDelegate.m;
+		sourceTree = "<group>";
+	};
+	AAC78E221012AA5500DBF789 /* SeismicXMLAppDelegate.m:308 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78E201012AA5500DBF789 /* SeismicXMLAppDelegate.m */;
+		functionName = "-parser:didEndElement:namespaceURI:qualifiedName:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 308;
+		location = SeismicXML;
+		modificationTime = 269716414.345996;
+		state = 2;
+	};
+	AAC78E6A1012B16300DBF789 /* SeismicXMLAppDelegate.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = SeismicXMLAppDelegate.m;
+		path = /Users/chs/src/iPhone/SeismicXML/Classes/SeismicXMLAppDelegate.m;
+		sourceTree = "<group>";
+	};
+	AAC78E731012B1C800DBF789 /* SeismicXMLAppDelegate.m:311 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78E6A1012B16300DBF789 /* SeismicXMLAppDelegate.m */;
+		functionName = "-parser:didEndElement:namespaceURI:qualifiedName:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 311;
+		location = SeismicXML;
+		modificationTime = 269716414.346459;
+		state = 2;
+	};
+	AAECC3111013824E0039A007 /* SeismicXMLAppDelegate.m:71 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78E6A1012B16300DBF789 /* SeismicXMLAppDelegate.m */;
+		functionName = "-dealloc";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 71;
+		location = SeismicXML;
+		modificationTime = 269716415.056141;
+		state = 1;
+	};
+	AAECC315101382570039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* SeismicXMLAppDelegate.h */;
+		name = "SeismicXMLAppDelegate.h: 94";
+		rLen = 0;
+		rLoc = 4011;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 2501;
+	};
+	AAECC32A101383D40039A007 /* RootViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = RootViewController.m;
+		path = /Users/chs/src/iPhone/SeismicXML/Classes/RootViewController.m;
+		sourceTree = "<absolute>";
+	};
+	AAECC33F101384E20039A007 /* RootViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = RootViewController.m;
+		path = /Users/chs/src/iPhone/SeismicXML/Classes/RootViewController.m;
+		sourceTree = "<absolute>";
+	};
+	AAECC349101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84EF889C0DB9369300448949 /* Earthquake.h */;
+		name = "Earthquake.h: 74";
+		rLen = 0;
+		rLoc = 3601;
+		rType = 0;
+		vrLen = 2263;
+		vrLoc = 1366;
+	};
+	AAECC34A101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 59";
+		rLen = 0;
+		rLoc = 2983;
+		rType = 0;
+		vrLen = 1628;
+		vrLoc = 1361;
+	};
+	AAECC34B101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* SeismicXMLAppDelegate.h */;
+		name = "SeismicXMLAppDelegate.h: 95";
+		rLen = 0;
+		rLoc = 4357;
+		rType = 0;
+		vrLen = 1636;
+		vrLoc = 1291;
+	};
+	AAECC34C101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAECC33F101384E20039A007 /* RootViewController.m */;
+		name = "RootViewController.m: 58";
+		rLen = 0;
+		rLoc = 2687;
+		rType = 0;
+		vrLen = 1084;
+		vrLoc = 2431;
+	};
+	AAECC34E101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAC78E6A1012B16300DBF789 /* SeismicXMLAppDelegate.m */;
+		name = "SeismicXMLAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1128;
+		vrLoc = 2932;
+	};
+	AAECC34F101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 52";
+		rLen = 0;
+		rLoc = 2698;
+		rType = 0;
+		vrLen = 2592;
+		vrLoc = 397;
+	};
+	AAECC353101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84EF889C0DB9369300448949 /* Earthquake.h */;
+		name = "Earthquake.h: 74";
+		rLen = 0;
+		rLoc = 3601;
+		rType = 0;
+		vrLen = 2263;
+		vrLoc = 1366;
+	};
+	AAECC35E101385EC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAECC32A101383D40039A007 /* RootViewController.m */;
+		name = "RootViewController.m: 56";
+		rLen = 0;
+		rLoc = 2609;
+		rType = 0;
+		vrLen = 939;
+		vrLoc = 2400;
+	};
+	AAECC37D1013866D0039A007 /* SeismicXMLAppDelegate.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = SeismicXMLAppDelegate.m;
+		path = /Users/chs/src/iPhone/SeismicXML/Classes/SeismicXMLAppDelegate.m;
+		sourceTree = "<group>";
+	};
+	AAECC37F1013866D0039A007 /* SeismicXMLAppDelegate.m:100 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAECC37D1013866D0039A007 /* SeismicXMLAppDelegate.m */;
+		functionName = "-newLocationUpdateToLatitude:Longitude:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 100;
+		location = SeismicXML;
+		modificationTime = 269716415.07388;
+		state = 1;
+	};
+	AAECC381101386760039A007 /* SeismicXMLAppDelegate.m:85 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAECC37D1013866D0039A007 /* SeismicXMLAppDelegate.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 85;
+		location = SeismicXML;
+		modificationTime = 269716415.560573;
+		state = 1;
+	};
+	AAECC395101389260039A007 /* DeviceLocation.m:43 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78D781012708500DBF789 /* DeviceLocation.m */;
+		functionName = "-startUpdates";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 43;
+		location = SeismicXML;
+		modificationTime = 269716415.1536469;
+		state = 1;
+	};
+	AAECC3971013892B0039A007 /* DeviceLocation.m:21 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78D781012708500DBF789 /* DeviceLocation.m */;
+		functionName = "-init";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 21;
+		location = SeismicXML;
+		modificationTime = 269716415.182838;
+		state = 1;
+	};
+	AAECC39B101389440039A007 /* DeviceLocation.m:56 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = AAC78D781012708500DBF789 /* DeviceLocation.m */;
+		functionName = "-locationManager:didUpdateToLocation:fromLocation:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 56;
+		location = SeismicXML;
+		modificationTime = 269716415.210451;
+		state = 1;
+	};
+	AAECC39F1013896C0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAC78D781012708500DBF789 /* DeviceLocation.m */;
+		name = "DeviceLocation.m: 39";
+		rLen = 22;
+		rLoc = 619;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 140;
+	};
+	AAECC3A410138BBC0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAC78D781012708500DBF789 /* DeviceLocation.m */;
+		name = "DeviceLocation.m: 27";
+		rLen = 0;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 586;
+		vrLoc = 136;
+	};
+	AAECC3E810139CAA0039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAECC37D1013866D0039A007 /* SeismicXMLAppDelegate.m */;
+		name = "SeismicXMLAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 571;
+		rType = 0;
+		vrLen = 2122;
+		vrLoc = 0;
+	};
+	AAECC3FF10139CF20039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28A0AAE50D9B0CCF005BE974 /* iQuake_Prefix.pch */;
+		name = "iQuake_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 89;
+		vrLoc = 0;
+	};
+	AAECC40910139E120039A007 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28A0AAE50D9B0CCF005BE974 /* iQuake_Prefix.pch */;
+		name = "iQuake_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 89;
+		vrLoc = 0;
+	};
+}
