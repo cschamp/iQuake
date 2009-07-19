@@ -93,26 +93,6 @@
 	rootViewController.earthquakeList = earthquakeList;
 	// Add the navigation view controller to the window.
 	[window addSubview:navigationController.view];
-    
-#if 0
-    // Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the
-    // application will remain responsive to the user. 
-    //
-    // IMPORTANT! The main thread of the application should never be blocked! Also, avoid synchronous network access on any thread.
-    //
-    static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/7day-M2.5.xml";
-    NSURLRequest *earthquakeURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:feedURLString]];
-    self.earthquakeFeedConnection = [[[NSURLConnection alloc] initWithRequest:earthquakeURLRequest delegate:self] autorelease];
-    
-    // Test the validity of the connection object. The most likely reason for the connection object to be nil is a malformed
-    // URL, which is a programmatic error easily detected during development. If the URL is more dynamic, then you should
-    // implement a more flexible validation technique, and be able to both recover from errors and communicate problems
-    // to the user in an unobtrusive manner.
-    NSAssert(self.earthquakeFeedConnection != nil, @"Failure to create URL connection.");
-    
-    // Start the status bar network activity indicator. We'll turn it off when the connection finishes or experiences an error.
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-#endif
 }
 
 - (void)newLocationUpdateToLatitude:(double)latitude Longitude:(double)longitude
@@ -120,7 +100,6 @@
 	self.currentLatitude = latitude;
 	self.currentLongitude = longitude;
 
-#if 1
     // Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the
     // application will remain responsive to the user. 
     //
@@ -138,7 +117,6 @@
     
     // Start the status bar network activity indicator. We'll turn it off when the connection finishes or experiences an error.
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-#endif
 }
 
 #pragma mark NSURLConnection delegate methods
