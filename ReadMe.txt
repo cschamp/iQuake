@@ -1,5 +1,16 @@
-SeismicXML
+iQuake
 
+This application for iPhone OS 3.0 is derived from the Apple sample code called SeismicXML. I have modified the original code to Location Manager, sorting the list of earthquakes from nearest to farthest from your current location. (The original code displayed the list in the order it was received from the USGS).
+
+I am in the process of adding Map Kit to the application, and will replace the table view (list) of earthquakes with an annotated map, where each pin on the map will represent an earthquake and will include pertinent information about the event in the annotation for the pin. The initial view of the map will center on your current location.
+
+Craig Schamp
+2007-07-21
+
+===========================================================================
+
+
+Original Apple SeismicXML documentation follows.
 ===========================================================================
 DESCRIPTION:
 
